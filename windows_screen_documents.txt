@@ -1,0 +1,55 @@
+In JavaScript, especially when working with web development, the `window`, `screen`, and `document` objects are essential components of the browser's environment. Each serves different purposes and has unique properties and methods. Here's an overview of each:
+
+Window Object
+
+-Definition: The `window` object represents the browser's window or tab in which the script is running.
+-Scope: It is the global object in a browser environment. All global variables and functions are properties of the `window` object.
+-Common Properties and Methods:
+  -window.innerWidth and window.innerHeight: Get the viewport's width and height, including scrollbars.
+  -window.open(): Opens a new browser window or tab.
+  -window.alert(), window.confirm(), window.prompt(): Display dialog boxes.
+  -window.location: Provides information about the current URL and methods to change it.
+  -window.setTimeout(), window.setInterval(): Timer functions.
+
+Example : javascript
+console.log(window.innerWidth); // Prints the viewport width
+window.alert("Hello, World!"); // Displays an alert box
+
+
+Screen Object
+
+-Definition: The `screen` object contains information about the user's screen, such as its width and height.
+-Scope: It provides properties that describe the screen's physical properties.
+-Common Properties:
+  -screen.width and screen.height: The width and height of the user's screen.
+  -screen.availWidth and screen.availHeight: The available width and height of the screen, excluding system UI (like taskbars).
+  -screen.orientation: Provides information about the screen's orientation (landscape or portrait).
+
+Example: javascript
+console.log(screen.width); // Prints the screen width
+console.log(screen.availHeight); // Prints the available screen height excluding OS taskbars
+
+
+
+Document Object
+
+-Definition: The `document` object represents the HTML document loaded in the window. It is the entry point for accessing and manipulating the DOM (Document Object Model).
+-Scope: It provides properties and methods to access and manipulate the content and structure of the HTML document.
+-Common Properties and Methods:
+  -document.getElementById(), document.querySelector(): Methods to select HTML elements.
+  -document.createElement(): Creates a new HTML element.
+  -document.body: Represents the `<body>` element of the document.
+  -document.title: Gets or sets the title of the document.
+  -document.cookie: Gets or sets cookies associated with the document.
+
+Example:javascript
+let element = document.getElementById('myElement'); // Selects an element with ID 'myElement'
+document.title = "New Page Title"; // Sets the document title
+
+
+Summary
+-window: Represents the browser window. It is the global context for scripts in a browser. Provides information and controls related to the window or tab.
+-screen: Provides information about the user's screen properties, such as width and height.
+-document: Represents the HTML document loaded in the window. Provides methods and properties to interact with and manipulate the DOM.
+
+Each of these objects plays a crucial role in web development by offering different sets of functionalities needed to build and interact with web pages effectively.

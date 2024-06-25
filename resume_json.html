@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume in JSON Format</title>
+  <style>
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+<h1>Resume in JSON Format</h1>
+<pre id="jsonDisplay"></pre>
+<script>
+const resume = {
+  "contactInformation": {
+    "name": "Prem Kumar D",
+    "email": "07pkumaran1996@gmail.com",
+    "phone": "+91 9597676865",
+    "linkedin": "https://www.linkedin.com/in/prem-kumar-455a422a4",
+    "location": "Chennai"
+  },
+  "profileSummary": `Meticulous Analyst Programmer with over 2 years of expertise in .NET application development and maintenance at HTC Global Services. 
+  Proficient in C#, ASP.NET, MVC, and SQL, adept at optimizing performance and enhancing code efficiency. 
+  Strong problem-solving skills with a background in agile methodologies and collaborative teamwork. 
+  Actively advancing skills through ongoing full stack web development training.`,
+  "coreSkills": [
+    "JavaScript",
+    "React",
+    "CSS",
+    "Java",
+    "C#",
+    "HTML",
+    "Bootstrap",
+    "SQL"
+  ],
+  "tools": [
+    "Git/GitHub",
+    "Jira"
+  ],
+  "certifications": [
+    "CCNA",
+    "Linux"
+  ],
+  "professionalExperience": [
+    {
+      "jobTitle": "Programmer Analyst",
+      "company": "HTC Global Services",
+      "location": "Chennai",
+      "startDate": "05/2021",
+      "endDate": "08/2023",
+      "responsibilities": [
+        "Proficient in developing and maintaining .NET applications, leveraging the framework for optimal software solutions.",
+        "Contributed to the Disney alliance project for 10 months, collaborating across diverse teams to achieve project goals and deliver high-quality results.",
+        "Implemented strategic UI enhancements, optimized database queries, and enforced coding standards, resulting in significant improvements in load times, error rates, and user engagement across staging and production environments.",
+        "Conducted regular health assessments of applications to ensure ongoing operational efficiency, proactively identifying and addressing potential issues.",
+        "Led code performance and review sessions, promoting adherence to coding standards and best practices.",
+        "Comprehensive documentation of development activities and testing procedures.",
+        "Executed thorough testing to identify and resolve discrepancies, ensuring robust software solutions."
+      ]
+    },
+    {
+      "jobTitle": "Data Entry Clerk",
+      "company": "INS Data Services",
+      "location": "Tiruvannamalai",
+      "startDate": "06/2019",
+      "endDate": "11/2019",
+      "responsibilities": [
+        "Extracted and uploaded property deeds onto Citrix Workspace app.",
+        "Verified tax compliance for property buyers.",
+        "Facilitated loan acquisition for buyers based on tax compliance."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Computer Applications (MCA)",
+      "institution": "SRM Valliammai Engineering College",
+      "location": "Chennai",
+      "startDate": "06/2017",
+      "endDate": "04/2019",
+      "cgpa": "6.97"
+    },
+    {
+      "degree": "Bachelor of Science in Computer Science (BSc CS)",
+      "institution": "Jamal Mohamed College",
+      "location": "Tiruchirappalli",
+      "startDate": "06/2014",
+      "endDate": "04/2017",
+      "cgpa": "7.4"
+    }
+  ],
+  "internships": [
+    {
+      "jobTitle": "Android Application Developer Internship",
+      "company": "San Software Solutions",
+      "location": "Chennai",
+      "startDate": "12/2018",
+      "endDate": "03/2019",
+      "responsibilities": [
+        "Developed an Automated Vehicle Insurance and Customer Management System Notification project.",
+        "Designed and implemented key features to enhance system efficiency.",
+        "Collaborated with the team to troubleshoot and resolve technical issues."
+      ]
+    }
+  ],
+  "achievements": [
+    "Organized events like the Technical Symposium, Varit2k17 as a class committee member.",
+    "Played a key role in coordinating logistics and ensuring the success of these events.",
+    "Actively participated in National Service Scheme (NSS) activities.",
+    "Demonstrated leadership and teamwork in academic and community projects."
+  ],
+  "ongoingTraining": [
+    "Full Stack Web Development"
+  ]
+};
+
+document.getElementById('jsonDisplay').textContent = JSON.stringify(resume, null, 2);
+</script>
+</body>
+</html>
